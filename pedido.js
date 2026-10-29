@@ -1,4 +1,5 @@
-function calculartotal(precio, cantidad) {
-    return precio  *  cantidad;
+function calcularPedido(precio, cantidad) {
+    return precio * cantidad;
 }
-module.exports = { calculartotal };
+
+module.exports = { calcularPedido };
