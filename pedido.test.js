@@ -1,11 +1,8 @@
-const test = require('node : test');
-const assert = require('node : assert/strict');
-const { calculartotal } = require('./pedido');
+const test = require('node:test');
+const assert = require('assert');
+const { calcularPedido } = require('./pedido.js');
 
-test('Dos almuerzos' , () = {
-     assert.equal(calculartotal(12000, 2), 24000);
-});
-
-test('Tres jugos' , () = {
-     assert.equal(calculartotal(4000, 3), 12000);
+test(' calcularPedido multiplics precio y cantidad correctamente', () = {
+     const resultado = calcularPedido(10, 3);
+     assert.strictEqual(resultado, 30);
 });
